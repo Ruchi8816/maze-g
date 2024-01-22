@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR TEAM SECTION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            /* overflow: scroll; */
+            /* line-height: 100%; */
+            scrollbar-width: thin;
+            scrollbar-color: transparent transparent;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        html::-webkit-scrollbar {
+            width: 0px;
+        }
+
+        html::-webkit-scrollbar-thumb {
+            background: transparent;
+        }
+
+        body {
+            /* background-color: azure;  */
+            background-image: linear-gradient(19deg, #e5e5e9 0%, #180a69 100%);
+        
+            font-family: "Century Gothic";
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            text-align: center;
+            text-transform: capitalize;
+            color:black;
+            margin: 10px 0;
+            position: relative;
+            font-size: xx-large;
+            
+            
+        }
+
+        .title:hover{
+    
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            background-color:#ACD8AA;
+            background: linear-gradient(135deg, #000000, #63846230);
+            border-radius: 10px;
+        
+        }
+    
+
+        .title::after {
+            content: "";
+            position: absolute;
+            width: 20%;
+            height: 7px;
+            background-image: linear-gradient(to left, transparent 5%, #000000);
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .team-row {
+            display: flex;
+            justify-content: left;
+            flex-wrap:nowrap;
+            padding: 40px 0;
+            width: 100%;
+            /* background-color: #000000; */
+        }
+
+        .team-row2 {
+            display: flex;
+            justify-content: left;
+            flex-wrap: nowrap;
+            padding: 100px 0;
+            width: 33.3%;
+            /* background-color: #000000; */
+        }
+
+        .member {
+            flex: 1 1 250px;
+            margin: 15px;
+            float: left;
+            text-align: center;
+            padding: 30px 15px;
+            cursor: pointer;
+            max-width: 33.3%;
+            transition: all 0.3s;
+            height: 500px;
+            /* background: linear-gradient(135deg, #74ebd5, #ACD8AA); */
+            /* background: linear-gradient(135deg, #74ebd597, #acd8aa8a); */
+            background:#88628b92;
+            color: white;
+
+        }
+
+        .member:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-20px);
+            background-color:#ACD8AA;
+            background: linear-gradient(135deg, #000000, #a145cb);
+            border-radius: 10px;
+        }
+
+        .member img {
+            display: block;
+            width: 190px;
+            height: 280px;
+            object-fit: cover;
+            border: 4px solid #726a95;
+            border-radius: 180%;
+          
+            margin: 0 auto;
+        }
+
+        .member h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            color:black;
+            margin: 15px 0;
+        }
+
+        .member p {
+            font-size: 15px;
+            color:black;
+            line-height: 1.6;
+            margin: 13px;
+            font-weight: bold;
+        }
+
+        .fa-brands {
+            margin: 10px;
+            /* height: 80px; */
+            font-size: 20px;
+            color: black;
+
+        }
+
+        /* .fa-brands:hover {
+            filter: drop-shadow(13px 13px gray)
+        } */
+
+        .img {
+        
+            background-color:#1d7793 ;
+            padding: 10px;
+
+        }
+
+        .button {
+            float: right;
+            margin: 10px;
+            margin-top: 35px;
+            font-size: medium;
+            font-size: 19.2;
+            /* padding: 5px; */
+
+        }
+
+        .button>a {
+            text-decoration: none;
+            color: black;
+            padding: 15px;
+            font-size: larger;
+        }
+        .button>a:hover {
+            background-color: white;
+            box-shadow: 3px 3px 5px black;
+            height: 50px;
+            border-radius: 10px;
+
+        }
+
+        .pic{
+            width: 50px;
+            height: 90px;
+        }
+        #bak {
+            padding: 20px;
+            margin-top: 1px;
+            float: left;
+            border: none;
+            background-color:  peachpuff;
+            color: black;
+            font-weight: bold;
+            border-radius: 50px;
+            width: 100px;
+            text-align: center;
+            box-shadow: 0px 5px 0px 5px black;
+            text-decoration: none;
+  }
+  /* .container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.4 );
+  display: contents;
+  align-items: center;
+  justify-items: center;
+} */
+        
+    </style>
+</head>
+
+<body>
+           
+
+    <section>
+        <!-- <div class="img">
+            <img src="images/logo F.png" alt="" height="100px" height="100px">
+            <div class="button">
+                <a href="welcome.html" id="h"> Home </a>
+                <a href="about.html" id="c">About</a>
+                <a href="team.html" id="n">OurTeam</a>
+                <a href="contactus.html" id="n">Contact us</a>
+                
+
+            </div> -->
+        </div>
+        <!-- <div class="container">
+            <video autoplay loop muted plays-inline class="background-clip">
+                <source src="all.mp4" type="video/mp4">
+            </video> -->
+            
+        <h1 class="title">Our Team</h1>
+        <div>
+            
+            <button id="bak"><a href="home.html">BACK</a></button>
+          </div>
+        <div class="team-row">
+            <div class="member">
+                <img class="pic"src="Shoaib1.jpeg" alt="">
+                <h2>Shoaib Akhtar</h2>
+                
+                <a href="mailto:Shoaibbhaim68@gmail.com">Shoaibbhaim68@gmail.com</a><br>
+                <a href="https://www.instagram.com/shoaib_akhtar_08_?igsh=cDh6OG1lYnA5YmMz"><i
+                        class="fa-brands fa-instagram"></i></a>
+        
+                <a href="https://www.linkedin.com/in/shoaib-akhtar-163281263?trk=contact-info"> <i
+                        class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+            <div class="member">
+                <img src="love.jpg" alt="">
+                <h2>Love Tiwari</h2>
+               
+                <a href="mailto:Lovetiwari7652@gmail.com">Lovetiwari7652@gmail.com</a><br>
+       
+                <a href="https://www.instagram.com/de_cl_me_l0ve?igsh=eWkwaGowYjdwaXJ3"> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/in/love-tiwari-031868294"> <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="member">
+                <img src="ruchi.jpeg" alt="">
+                <h2>Ruchi Ranjan</h2>
+               
+                <a href="mailto:ruchiranjan2733@gmail.com">ruchiranjan2733@gmail.com</a><br>
+                <a href="https://www.instagram.com/ruch_i14_04?igsh=bHd2ZDYyNHhydTRn"> <i class="fa-brands fa-instagram"></i></a>
+                
+                
+                <a href="https://www.linkedin.com/in/ruchi-ranjan-14aab7283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"> <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="member">
+                <img src="soumit.jpeg" alt="">
+                <h2>Sai Soumit</h2>
+                
+                <a href="mailto:soumith2004@gmail.com">soumith2004@gmail.com</a><br>
+                <a href="https://www.instagram.com/jiraiya_3?igsh=cXdja2hiOXBodnZh"> <i class="fa-brands fa-instagram"></i></a>
+               
+                <a href="https://www.linkedin.com/in/sai-soumit-b83a202ab/"> <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="member">
+                <img src="vinita.jpg" alt="">
+                <h2>Vinita</h2>
+               
+                <a href="mailto:vinithaburri@gmail.com">vinithaburri@gmail.com</a><br>
+                <a href="https://www.instagram.com/vinny_papa9?igsh=MXgyMHlieWY1c2lvcQ=="> <i
+                        class="fa-brands fa-instagram"></i></a>
+                
+                <a
+                    href="https://www.linkedin.com/in/burri-vinitha-6078172ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                    <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+
+            <div class="member">
+                <img src="neil.jpeg" alt="">
+                <h2>Neelakantha</h2>
+               
+                <a href="mailto:neelakantasastryprathapagiri@gmail.com">neelakantasastryprathapagiri@gmail.com</a>
+                <a href="https://www.instagram.com/neelakantasastry?igsh=MW43eG5rdmVrd3Jxcg=="> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <ahref=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </div>
+ 
+  
+    </section>
+    <script>
+        document.getElementsByTagName("h1")[0].style.fontSize = "6vw";
+    </script>
+</body>
+
+</html>
